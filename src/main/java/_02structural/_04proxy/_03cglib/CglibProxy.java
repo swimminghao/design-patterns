@@ -1,4 +1,4 @@
-package _02structural._04proxy.cglib;
+package _02structural._04proxy._03cglib;
 
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
@@ -22,7 +22,7 @@ public class CglibProxy {
         //3、设置回调
         enhancer.setCallback(new MethodInterceptor() {
             @Override
-            public Object intercept(Object obj,
+            public  Object intercept(Object obj,
                                     Method method,  //为了能获取到原方法的一些元数据信息
                                     Object[] args,
                                     MethodProxy proxy) throws Throwable {

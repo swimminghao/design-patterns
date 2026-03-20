@@ -1,4 +1,4 @@
-package _02structural._04proxy.dynamic;
+package _02structural._04proxy._02dynamic;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -31,6 +31,7 @@ public class JdkTiktokProxy<T> implements InvocationHandler {
          * InvocationHandler h,
          *  当前被代理对象执行目标方法的时候我们使用h可以定义拦截增强方法
          */
+
         Object o = Proxy.newProxyInstance(
                 t.getClass().getClassLoader(),
                 t.getClass().getInterfaces(), //必须接口

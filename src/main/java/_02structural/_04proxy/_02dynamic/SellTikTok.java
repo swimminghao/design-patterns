@@ -1,4 +1,4 @@
-package _02structural._04proxy.dynamic;
+package _02structural._04proxy._02dynamic;
 
 public interface SellTikTok {
 

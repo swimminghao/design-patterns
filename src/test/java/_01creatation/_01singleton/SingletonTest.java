@@ -23,7 +23,7 @@
 //
 //    }
 //}
-////
+/// /
 package _01creatation._01singleton;
 
 import com.alibaba.fastjson.JSON;
@@ -208,11 +208,11 @@ public class SingletonTest {
     @Test
     public void testSystemEnv() {
         Properties properties = System.getProperties();
-        System.out.println("*".repeat(22));
+        System.out.println("********");
         System.out.println(JSON.toJSONString(properties));
         Map<String, String> getenv = System.getenv();
         String jsonString = JSON.toJSONString(getenv);
-        System.out.println("*".repeat(22));
+        System.out.println("********");
         System.out.println(jsonString);
     }
 }

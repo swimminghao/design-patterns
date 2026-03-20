@@ -1,4 +1,4 @@
-package _02structural._04proxy.statics;
+package _02structural._04proxy._01statics;
 
 /**
  * 抽象主体。被代理角色能干什么

@@ -1,4 +1,4 @@
-package _02structural._04proxy.statics;
+package _02structural._04proxy._01statics;
 
 public class ZhangTikTok implements ManTikTok {
     @Override

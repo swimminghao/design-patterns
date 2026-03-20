@@ -1,4 +1,4 @@
-package _02structural._04proxy.cglib;
+package _02structural._04proxy._03cglib;
 
 
 /**

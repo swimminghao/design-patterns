@@ -1,4 +1,4 @@
-package _02structural._04proxy.dynamic;
+package _02structural._04proxy._02dynamic;
 
 
 import java.util.Arrays;
@@ -23,7 +23,9 @@ public class MainTest {
         ((SellTikTok)proxy).sell();
 
 
+
         //能不能代理被代理对象本类自己的方法?proxy只能转成接口类
+        //不能，会报错
 //        ((LeiTikTok)proxy).haha();
         System.out.println(Arrays.asList(proxy.getClass().getInterfaces()));
 
