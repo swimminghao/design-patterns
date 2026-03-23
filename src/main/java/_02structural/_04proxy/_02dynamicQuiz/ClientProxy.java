@@ -1,29 +1,22 @@
 package _02structural._04proxy._02dynamicQuiz;
 
-
-import org.apache.poi.poifs.property.PropertyTable;
-
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 public class ClientProxy<T> implements InvocationHandler {
-
     public T target;
 
-    public ClientProxy(T t){
+    public ClientProxy(T t) {
         this.target = t;
     }
 
-    public static<T> T connect(T t) {
 
-        Object o = Proxy.newProxyInstance(
-                t.getClass().getClassLoader(),
+    public static <T> T connect(T t) {
+        Object o = Proxy.newProxyInstance(t.getClass().getClassLoader(),
                 t.getClass().getInterfaces(),
-                new ClientProxy(t)
-        );
-
-        return (T) o;
+                new ClientProxy(t));
+        return (T)o;
     }
 
     /**

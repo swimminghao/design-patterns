@@ -2,10 +2,10 @@ package _02structural._04proxy._02dynamicQuiz;
 
 public class MainTest {
     public static void main(String[] args) {
-        CLient cLient = new PhoneCLient();
-        CLient proxy = ClientProxy.connect(cLient);
-
+        Client client = new PhoneClient();
+        Client proxy = ClientProxy.connect(client);
         proxy.connect();
-    }
 
+        ((Server)proxy).communicate();
+    }
 }

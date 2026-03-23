@@ -6,8 +6,14 @@ public class CPU  extends Hardware{
     }
 
     @Override
+    public void work() {
+        System.out.println("CPU处理指令："+command);
+    }
+
+    @Override
     public void accept(Vistor vistor) {
-        //软件包要能访问当前硬件
+        //给升级包提供一个改CPU指令等信息的办法
         vistor.visitCPU(this);
     }
+
 }

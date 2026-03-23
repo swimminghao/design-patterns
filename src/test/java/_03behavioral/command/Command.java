@@ -3,6 +3,9 @@ package _03behavioral.command;
 
 /**
  * 抽象命令类
+ * Controller、Service、Dao接口
+ *
+ * Service
  */
 public interface  Command {
 

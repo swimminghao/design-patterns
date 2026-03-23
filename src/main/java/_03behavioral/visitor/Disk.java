@@ -6,7 +6,14 @@ public class Disk extends Hardware{
     }
 
     @Override
+    public void work() {
+        System.out.println("Disk保存指令的历史记录："+command);
+    }
+
+
+    @Override
     public void accept(Vistor vistor) {
         vistor.visitDisk(this);
     }
+
 }

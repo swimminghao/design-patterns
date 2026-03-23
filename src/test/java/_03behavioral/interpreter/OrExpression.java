@@ -16,6 +16,8 @@ public class OrExpression extends IDCardExpression {
 
     @Override
     boolean interpret(String expression) {
-        return false;
+
+        //定义所有终结表达式的合并逻辑
+        return cityExp.interpret(expression) || typeExp.interpret(expression);
     }
 }
